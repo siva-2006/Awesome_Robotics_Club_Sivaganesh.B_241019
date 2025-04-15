@@ -4,9 +4,10 @@ Task -  4
 Part - A
 
 Magnetic Ball Control
-	If the ball is made of steel or some magnetic material, we could place a grid of electromagnets underneath the platform and use them to pull the ball in different directions. By carefully adjusting the strength of the magnets, like turning one on slightly while turning another off, we can gently attract the ball and move it around the surface without physically moving the platform at all. This method is quiet, has no moving parts, and is extremely responsive. The ball glides around as if by an invisible hand. The main challenge would be precise control of the magnetic fields and managing heat from the electromagnets, but it’s a creative and visually impressive alternative to traditional servo-based designs.
+If the ball is made of steel or some magnetic material, we could place a grid of electromagnets underneath the platform and use them to pull the ball in different directions. By carefully adjusting the strength of the magnets, like turning one on slightly while turning another off, we can gently attract the ball and move it around the surface without physically moving the platform at all. This method is quiet, has no moving parts, and is extremely responsive. The ball glides around as if by an invisible hand. The main challenge would be precise control of the magnetic fields and managing heat from the electromagnets, but it’s a creative and visually impressive alternative to traditional servo-based designs.
 
 Components:
+
 Electromagnets:
 
 These are used to create a magnetic field to pull the ball in different directions. You need small but powerful electromagnets to control the ball effectively.
@@ -62,9 +63,11 @@ Part - 2
 Approach 1: Infrared (IR) Sensors with Reflective Markers
 
 1. Sensors and Specifications
+
 We could use infrared (IR) sensors to detect the ball’s position. An array of IR emitters and detectors would be placed around the edges of the platform. The ball would have a reflective marker (a strip or small patch) that bounces the infrared light back to the detector as it rolls around.
 
 2. Tracking Motion
+
 The system can track the ball by measuring the relative position of the reflective marker using the IR sensors. As the ball rolls across the platform, it changes the intensity of the reflected light that the detectors pick up. By comparing the data from multiple sensors arranged around the edges, the system can calculate the ball’s 2D position on the platform.
 
 4. Pros and Cons
@@ -90,12 +93,15 @@ Accuracy may decrease if the reflective marker is too small or if the ball’s p
 Approach 2: Capacitive Position Sensing
 
 1. Sensors and Specifications
+
 Another approach could be using capacitive sensors to detect the position of the ball. These sensors can sense changes in the electrostatic field created by the presence of the ball. A set of capacitive grid sensors could be placed under the platform to create an invisible 2D grid. As the ball rolls, it disrupts the electric field, and the system can track the position based on the changes in capacitance like our phones detect where we touch on the screen.
 
 2. Tracking Motion
+
 The system works by measuring the changes in capacitance across the sensor grid. When the ball rolls over different areas of the platform, the sensors detect changes in the field, and by processing this data, the system can pinpoint the ball’s position. It can even measure the ball's speed and direction by analyzing how fast these changes happen across the sensors.
 
 3. Pros and Cons
+
 Pros:
 
 Relatively high accuracy for small-scale setups.
