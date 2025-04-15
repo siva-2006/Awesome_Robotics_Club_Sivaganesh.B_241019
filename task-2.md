@@ -1,0 +1,1 @@
+I find the ball balancing bot project fascinating because it blends physics, robotics, and real-time control systems. The challenge of precisely balancing a ball on a moving platform is both complex and rewarding. It helps me understand how sensors, motors, and all the parts need to work together, and that’s what makes it so interesting.
