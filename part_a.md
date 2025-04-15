@@ -20,6 +20,8 @@ Controller:
 
 A controller adjusts the current to the electromagnets based on the ball's position, moving the ball by changing the magnetic field.
 
+
+
 Challenges:
 
 Controlling Magnetic Strength:
@@ -34,6 +36,8 @@ Interference:
 
 Strong magnetic fields can interfere with other electronics, requiring shielding.
 
+
+
 Pros:
 
 No moving parts – Since the platform itself doesn’t move, there’s less wear and tear and fewer things that can break.
@@ -45,6 +49,8 @@ Very responsive – Electromagnets can be turned on and off really quickly, allo
 Futuristic and impressive – Watching a ball move around as if by magic looks really cool and can grab attention in demos.
 
 Compact design – Everything stays under the surface, so the setup can be made very neat.
+
+
 
 Cons:
 
@@ -58,6 +64,8 @@ Limited lifting power – If the ball is too heavy, the magnets might not be str
 
 Expensive components – High-quality electromagnets and power drivers can get pricey.
 
+
+
 Part - 2
 
 Approach 1: Infrared (IR) Sensors with Reflective Markers
@@ -66,11 +74,15 @@ Approach 1: Infrared (IR) Sensors with Reflective Markers
 
 We could use infrared (IR) sensors to detect the ball’s position. An array of IR emitters and detectors would be placed around the edges of the platform. The ball would have a reflective marker (a strip or small patch) that bounces the infrared light back to the detector as it rolls around.
 
+
+
 2. Tracking Motion
 
 The system can track the ball by measuring the relative position of the reflective marker using the IR sensors. As the ball rolls across the platform, it changes the intensity of the reflected light that the detectors pick up. By comparing the data from multiple sensors arranged around the edges, the system can calculate the ball’s 2D position on the platform.
 
-4. Pros and Cons
+
+
+3. Pros and Cons
 
 Pros:
 
@@ -82,6 +94,8 @@ Can work in low-light conditions since IR light doesn’t depend on visible ligh
 
 High responsiveness with low latency.
 
+
+
 Cons:
 
 Limited range and resolution so may not work well over larger distances or for very fast-moving balls.
@@ -90,15 +104,21 @@ Potential interference from other IR sources (like sunlight) or reflective surfa
 
 Accuracy may decrease if the reflective marker is too small or if the ball’s position doesn’t align well with the sensors.
 
+
+
 Approach 2: Capacitive Position Sensing
 
 1. Sensors and Specifications
 
 Another approach could be using capacitive sensors to detect the position of the ball. These sensors can sense changes in the electrostatic field created by the presence of the ball. A set of capacitive grid sensors could be placed under the platform to create an invisible 2D grid. As the ball rolls, it disrupts the electric field, and the system can track the position based on the changes in capacitance like our phones detect where we touch on the screen.
 
+
+
 2. Tracking Motion
 
 The system works by measuring the changes in capacitance across the sensor grid. When the ball rolls over different areas of the platform, the sensors detect changes in the field, and by processing this data, the system can pinpoint the ball’s position. It can even measure the ball's speed and direction by analyzing how fast these changes happen across the sensors.
+
+
 
 3. Pros and Cons
 
@@ -109,6 +129,8 @@ Relatively high accuracy for small-scale setups.
 Low power consumption once set up.
 
 Doesn’t require direct contact with the ball.
+
+
 
 Cons:
 
